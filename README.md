@@ -8,3 +8,9 @@ In this tutorial, we will install and set up Grafana dashboard and Prometheus to
 
 ## Flow Chart
 ![alt text](https://github.com/withabubaker/Using-Grafana-and-Prometheus-to-Monitor-Raspberry-Pi-Services/blob/main/img/GrafanaFlowChart.jpg)
+
+## Targeted Services
+1. nodered.service
+3. pareto-anywhere-pi.service
+4. barnowl-hci-forwarder-pi.service
+5. ControlKasaSmartPlug.service
