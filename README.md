@@ -64,7 +64,8 @@ sudo systemctl start node_exporter
 
 ## Install Grafana on Windows 11
 
-Download and install the file from [here](https://grafana.com/grafana/download?pg=get&plcmt=selfmanaged-box1-cta1&platform=windows).
+Download and install the file from [here](https://grafana.com/grafana/download?pg=get&plcmt=selfmanaged-box1-cta1&platform=windows)
+
 you should be able to navigate ***http://localhost:3000*** with the default credential admin/admin
 
 Go to Configuration > Data Source and add Prometheus as a data source
