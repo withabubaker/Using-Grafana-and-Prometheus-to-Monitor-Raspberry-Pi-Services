@@ -17,4 +17,13 @@ In this tutorial, we will install and set up Grafana dashboard and Prometheus to
 
 ## Install and Configure Prometheus (windows 11)
 
-### Download and run the setup file from [here](https://prometheus.io/download/)
+1. Download and run the setup file from [here](https://prometheus.io/download/)
+2. Edit prometheus.yml, replace <raspberry_pi_ip> with your pi's IP address
+```yaml
+scrape_configs:
+  - job_name: 'raspberrypi'
+    static_configs:
+      - targets: ['<raspberry_pi_ip>:9100']
+
+```
+
