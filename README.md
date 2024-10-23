@@ -72,5 +72,7 @@ sudo systemctl start node_exporter
 ## Install Grafana on windows 11
 
 1. Download and install the file from [here](https://grafana.com/grafana/download?pg=get&plcmt=selfmanaged-box1-cta1&platform=windows).
-   you should be able to navigate ***http://localhost:3000***
-3. 
+   you should be able to navigate ***http://localhost:3000*** with the default credential admin/admin
+2. Go to Configuration > Data Source and add Prometheus as a data source
+4. Now you can create the dashboard and play around. That's it!!!
+
