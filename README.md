@@ -14,3 +14,7 @@ In this tutorial, we will install and set up Grafana dashboard and Prometheus to
 3. pareto-anywhere-pi.service
 4. barnowl-hci-forwarder-pi.service
 5. ControlKasaSmartPlug.service
+
+## Install and Configure Prometheus (windows 11)
+
+### Download and run the setup file from [here](https://prometheus.io/download/)
