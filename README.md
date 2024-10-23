@@ -40,7 +40,7 @@ cd node_exporter-1.6.0.linux-armv7
 ```
 Now you should be able to navigate to ***http://<raspberry_pi_ip>:9100/metrics***
 
-Run it as a service to keep it running in the background continuously
+Run it as a service to keep it running continuously in the background 
 ```bash
 sudo nano /etc/systemd/system/node_exporter.service
 ```
