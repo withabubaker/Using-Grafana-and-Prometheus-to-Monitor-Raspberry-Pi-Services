@@ -29,7 +29,7 @@ cd C:\Prometheus
 prometheus.exe --config.file=prometheus.yml
 ```
 
-## Install and Configure Node Exporter (this will grap the metrics from your pi)
+## Install and Configure Node Exporter, this will grab the metrics from the Raspberry Pi
 
 1. Install the node on your Raspberry Pi
 ```bash
