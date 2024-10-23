@@ -34,3 +34,33 @@ start the service
 ```bash
 prometheus.exe --config.file=prometheus.yml
 ```
+
+## Install and Configure Node Exporter (this will grap the metrics from your pi)
+
+1. Install the node on the Raspberry Pi
+```bash
+wget https://github.com/prometheus/node_exporter/releases/download/v1.6.0/node_exporter-1.6.0.linux-armv7.tar.gz
+tar xvfz node_exporter-1.6.0.linux-armv7.tar.gz
+cd node_exporter-1.6.0.linux-armv7
+./node_exporter
+```
+Now you should be able to navigate to ***http://<raspberry_pi_ip>:9100/metrics***
+
+2. Run it as a service to keep it running in the background continusley
+Create a service file
+```bash
+sudo nano /etc/systemd/system/node_exporter.service
+```
+Add the following to the file
+```ini
+[Unit]
+Description=Node Exporter
+
+[Service]
+ExecStart=/home/pi/node_exporter-1.6.0.linux-armv7/node_exporter
+
+[Install]
+WantedBy=multi-user.target
+```
+
+
