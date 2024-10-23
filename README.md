@@ -15,7 +15,7 @@ In this tutorial, we will install and set up Grafana dashboard and Prometheus to
 4. barnowl-hci-forwarder-pi.service
 5. ControlKasaSmartPlug.service
 
-## Install and Configure Prometheus (windows 11)
+## Install and Configure Prometheus on wondows 11
 
 1. Download and run the setup file from [here](https://prometheus.io/download/)
 2. Edit ***prometheus.yml***, replace ***<raspberry_pi_ip>*** with your pi's IP address
@@ -37,7 +37,7 @@ prometheus.exe --config.file=prometheus.yml
 
 ## Install and Configure Node Exporter (this will grap the metrics from your pi)
 
-1. Install the node on the Raspberry Pi
+1. Install the node on your Raspberry Pi
 ```bash
 wget https://github.com/prometheus/node_exporter/releases/download/v1.6.0/node_exporter-1.6.0.linux-armv7.tar.gz
 tar xvfz node_exporter-1.6.0.linux-armv7.tar.gz
@@ -63,4 +63,13 @@ ExecStart=/home/pi/node_exporter-1.6.0.linux-armv7/node_exporter
 WantedBy=multi-user.target
 ```
 
+Enable the service, this will let the service run automatically after reboot
+then start the service
+```bash
+sudo systemctl enable node_exporter
+sudo systemctl start node_exporter
+```
 
+## Install Grafana on windows 11
+
+1. Download and instrall the file from [here] (https://grafana.com/grafana/download?pg=get&plcmt=selfmanaged-box1-cta1&platform=windows)
