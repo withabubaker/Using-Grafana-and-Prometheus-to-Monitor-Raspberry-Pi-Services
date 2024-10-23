@@ -25,7 +25,6 @@ scrape_configs:
 ```bash
 cd C:\Prometheus
 ```
-start the service
 ```bash
 prometheus.exe --config.file=prometheus.yml
 ```
