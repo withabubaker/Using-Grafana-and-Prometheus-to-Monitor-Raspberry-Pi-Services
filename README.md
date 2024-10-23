@@ -72,4 +72,4 @@ sudo systemctl start node_exporter
 
 ## Install Grafana on windows 11
 
-1. Download and instrall the file from [here] (https://grafana.com/grafana/download?pg=get&plcmt=selfmanaged-box1-cta1&platform=windows)
+1. Download and instrall the file from [here](https://grafana.com/grafana/download?pg=get&plcmt=selfmanaged-box1-cta1&platform=windows)
